@@ -1,9 +1,10 @@
 import type { Metadata } from 'next'
 import './globals.css'
+import { ThemeProvider } from 'next-themes'
 
 export const metadata: Metadata = {
-  title: 'v0 App',
-  description: 'Created with v0',
+  title: 'MR Player',
+  description: 'Created with NextJS/typescript',
   generator: 'v0.dev',
 }
 
@@ -14,7 +15,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>{children}</body>
+        <body>
+          <ThemeProvider attribute="class">{children}</ThemeProvider>
+        </body>
     </html>
   )
 }

@@ -22,7 +22,7 @@ export default function ThemeToggle() {
       </Button>
     )
   }
-
+  console.log('theme: ',theme);
   return (
     <Button
       variant="outline"
