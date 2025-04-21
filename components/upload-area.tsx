@@ -60,7 +60,7 @@ export default function UploadArea({ onFilesAdded }: UploadAreaProps) {
       >
         Select Files
       </Button>
-      <input id="file-upload" type="file" accept="audio/*" multiple className="hidden" onChange={handleFileUpload} />
+      <input id="file-upload" type="file" accept=".mp3,.wav,.ogg,.aac,.m4a" multiple className="hidden" onChange={handleFileUpload} />
     </div>
   )
 }
