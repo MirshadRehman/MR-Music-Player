@@ -61,7 +61,7 @@ export default function NowPlaying({
 
       <ProgressBar currentTime={currentTime} duration={duration} onChange={onProgressChange} disabled={!currentSong} />
 
-      <div className="flex items-center justify-between mt-4">
+      <div className="flex flex-col md:flex-row items-baseline md:items-center justify-between mt-4">
         <PlaybackControls
           isPlaying={isPlaying}
           isShuffleOn={isShuffleOn}
